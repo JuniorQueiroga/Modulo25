@@ -1,24 +1,22 @@
+package com.seuprojeto.Dao;
+
 import Cliente.Cliente;
 import Dao.ClienteDAO;
 import Dao.ClienteDaoMock;
 import Dao.IClienteDAO;
-import Service.ClienteService;
-import Service.IClienteService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ClienteTest {
-
-    private IClienteService clienteService;
+public class ClienteDAOTest {
+    private IClienteDAO clienteDAO;
 
     private Cliente cliente;
 
-    public ClienteTest() {
-
-        IClienteDAO dao = new ClienteDaoMock();
-        clienteService = new ClienteService(dao);
+    public ClienteDAOTest() {
+        clienteDAO = new ClienteDaoMock();
     }
+
     @Before
     public void init() {
         cliente = new Cliente();
@@ -29,17 +27,24 @@ public class ClienteTest {
         cliente.setEstado("SP");
         cliente.setNumero(1000);
         cliente.setTel(11972378888L);
-        clienteService.salvar(cliente);
-
+        clienteDAO.salvar(cliente);
     }
 
     @Test
     public void pesquisarCliente() {
-
-        Cliente clienteConsultado = clienteService.buscarPorCPF(cliente.getCpf());
-
+        Cliente clienteConsultado = clienteDAO.buscarPorCPF(cliente.getCpf());
         Assert.assertNotNull(clienteConsultado);
-
     }
 
+    @Test
+    public void excluirCliente() {
+        clienteDAO.excluir(cliente.getCpf());
+    }
+
+    @Test
+    public void alterarCliente() {
+        cliente.setNome("Queiroga");
+        clienteDAO.alterar(cliente);
+        Assert.assertEquals("Queiroga", cliente.getNome());
+    }
 }
