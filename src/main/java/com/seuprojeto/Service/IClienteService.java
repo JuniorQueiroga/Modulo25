@@ -1,5 +1,6 @@
-package Service;
-import Cliente.Cliente;
+package com.seuprojeto.Service;
+
+import com.seuprojeto.Cliente.Cliente;
 
 public interface IClienteService {
 

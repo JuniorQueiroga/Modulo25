@@ -1,8 +1,7 @@
-package Service;
+package com.seuprojeto.Service;
 
-import Cliente.Cliente;
-import Dao.ClienteDAO;
-import Dao.IClienteDAO;
+import com.seuprojeto.Cliente.Cliente;
+import com.seuprojeto.Dao.IClienteDAO;
 
 public class ClienteService implements IClienteService {
 

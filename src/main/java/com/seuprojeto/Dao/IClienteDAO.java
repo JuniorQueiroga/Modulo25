@@ -1,6 +1,6 @@
-package Dao;
+package com.seuprojeto.Dao;
 
-import Cliente.Cliente;
+import com.seuprojeto.Cliente.Cliente;
 
 public interface IClienteDAO {
     Boolean salvar(Cliente cliente);

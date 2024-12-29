@@ -1,8 +1,8 @@
-import Cliente.Cliente;
-import Dao.ClienteDaoMock;
-import Dao.IClienteDAO;
-import Service.ClienteService;
-import Service.IClienteService;
+package com.seuprojeto.Service;
+
+import com.seuprojeto.Cliente.Cliente;
+import com.seuprojeto.Dao.ClienteDaoMock;
+import com.seuprojeto.Dao.IClienteDAO;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

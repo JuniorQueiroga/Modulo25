@@ -1,4 +1,4 @@
-package Cliente;
+package com.seuprojeto.Cliente;
 
 public class Cliente {
 

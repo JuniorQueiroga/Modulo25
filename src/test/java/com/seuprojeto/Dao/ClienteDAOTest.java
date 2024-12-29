@@ -1,9 +1,6 @@
 package com.seuprojeto.Dao;
 
-import Cliente.Cliente;
-import Dao.ClienteDAO;
-import Dao.ClienteDaoMock;
-import Dao.IClienteDAO;
+import com.seuprojeto.Cliente.Cliente;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,8 +17,8 @@ public class ClienteDAOTest {
     @Before
     public void init() {
         cliente = new Cliente();
-        cliente.setCpf(12345678910L);
-        cliente.setNome("Queiroga");
+        cliente.setCpf(12345678999L);
+        cliente.setNome("Queirogaaa");
         cliente.setCidade("Barueri");
         cliente.setEnd("Av Tucunare");
         cliente.setEstado("SP");
