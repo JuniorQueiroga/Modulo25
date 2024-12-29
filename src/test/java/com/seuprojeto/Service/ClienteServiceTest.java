@@ -1,8 +1,16 @@
+<<<<<<< HEAD:src/test/java/com/seuprojeto/Service/ClienteServiceTest.java
 package com.seuprojeto.Service;
 
 import com.seuprojeto.Cliente.Cliente;
 import com.seuprojeto.Dao.ClienteDaoMock;
 import com.seuprojeto.Dao.IClienteDAO;
+=======
+import Cliente.Cliente;
+import Dao.ClienteDaoMock;
+import Dao.IClienteDAO;
+import Service.ClienteService;
+import Service.IClienteService;
+>>>>>>> 496c80dc15c034af74bc2bb93e53aef7c652afe4:src/ClienteServiceTest.java
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,4 +64,8 @@ public class ClienteServiceTest {
         Assert.assertEquals("Queiroga", cliente.getNome());
 
     }
+<<<<<<< HEAD:src/test/java/com/seuprojeto/Service/ClienteServiceTest.java
 }
+=======
+}
+>>>>>>> 496c80dc15c034af74bc2bb93e53aef7c652afe4:src/ClienteServiceTest.java
